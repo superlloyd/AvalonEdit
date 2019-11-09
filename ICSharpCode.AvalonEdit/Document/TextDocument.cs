@@ -25,8 +25,6 @@ using System.Diagnostics;
 using System.Globalization;
 using System.Threading;
 using ICSharpCode.AvalonEdit.Utils;
-using ICSharpCode.NRefactory;
-using ICSharpCode.NRefactory.Editor;
 
 namespace ICSharpCode.AvalonEdit.Document
 {
