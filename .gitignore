@@ -7,3 +7,4 @@ bin/
 /packages/NUnit.2.6.3
 /Documentation/IntelliSense
 /.vs/ICSharpCode.AvalonEdit
+/.vs

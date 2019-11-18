@@ -1043,7 +1043,7 @@ namespace ICSharpCode.AvalonEdit.Editing
 			this.MouseEnter += delegate { ShowMouseCursor(); };
 			this.MouseLeave += delegate { ShowMouseCursor(); };
 			this.PreviewMouseMove += delegate { ShowMouseCursor(); };
-			#if DOTNET4
+			#if NET472
 			this.TouchEnter += delegate { ShowMouseCursor(); };
 			this.TouchLeave += delegate { ShowMouseCursor(); };
 			this.PreviewTouchMove += delegate { ShowMouseCursor(); };

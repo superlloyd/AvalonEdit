@@ -155,7 +155,7 @@ namespace ICSharpCode.AvalonEdit.Highlighting
 		/// <summary>
 		/// Serializes this HighlightingColor instance.
 		/// </summary>
-		#if DOTNET4
+		#if NET472
 		[System.Security.SecurityCritical]
 		#else
 		[SecurityPermission(SecurityAction.LinkDemand, Flags = SecurityPermissionFlag.SerializationFormatter)]

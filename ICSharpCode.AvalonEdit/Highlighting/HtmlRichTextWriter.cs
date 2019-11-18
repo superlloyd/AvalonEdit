@@ -19,7 +19,7 @@
 using System;
 using System.Collections.Generic;
 using System.IO;
-#if DOTNET4
+#if NET472
 using System.Net;
 #else
 using System.Web;
@@ -136,7 +136,7 @@ namespace ICSharpCode.AvalonEdit.Highlighting
 					needIndentation = true;
 					break;
 				default:
-					#if DOTNET4
+					#if NET472
 					WebUtility.HtmlEncode(c.ToString(), htmlWriter);
 					#else
 					HttpUtility.HtmlEncode(c.ToString(), htmlWriter);
@@ -181,7 +181,7 @@ namespace ICSharpCode.AvalonEdit.Highlighting
 			if (value.Length == 0)
 				return;
 			WriteIndentationAndSpace();
-			#if DOTNET4
+			#if NET472
 			WebUtility.HtmlEncode(value, htmlWriter);
 			#else
 			HttpUtility.HtmlEncode(value, htmlWriter);
@@ -256,7 +256,7 @@ namespace ICSharpCode.AvalonEdit.Highlighting
 		public override void BeginHyperlinkSpan(Uri uri)
 		{
 			WriteIndentationAndSpace();
-			#if DOTNET4
+			#if NET472
 			string link = WebUtility.HtmlEncode(uri.ToString());
 			#else
 			string link = HttpUtility.HtmlEncode(uri.ToString());
